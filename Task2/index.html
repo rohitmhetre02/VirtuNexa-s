@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav>
+        <div class="hotel-name">Our Hotel</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+        <p>Your comfort is our priority. Book your stay with us today!</p>
+    </header>
+
+    <section id="gallery">
+        <h2>Room Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="./imgs/101.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Spacious and luxurious with a beautiful view.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./imgs/102.jpg" alt="Standard Room">
+                <h3>Standard Room</h3>
+                <p>Comfortable and cozy for a relaxing stay.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./imgs/103.jpg" alt="Suite">
+                <h3>Suite</h3>
+                <p>Perfect for families or long stays with extra amenities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Room</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --accent-color: #007BFF;
+    --header-bg: #ffffff;
+    --footer-bg: #222;
+    --footer-text: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+#menu-icon {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+}
+
+.Heroimg {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+}
+
+.extra-info .left, .extra-info .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.Famous-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--header-bg);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .extra-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .Famous-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
