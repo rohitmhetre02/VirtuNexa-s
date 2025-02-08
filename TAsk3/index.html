@@ -1,0 +1,129 @@
+l
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Learn">Learn DSA</a></li>
+            <li><a href="#DSA-info">Roadmap</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="Learn">
+        <h2>DSA Learning Video</h2>
+        <div class="video-container">
+            <video id="videoPlayer" width="600" controls>
+                <source src="101.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Watch this video to understand Data Structures and Algorithms.</p>
+        </div>
+    </section>
+    
+    <section id="DSA-info">
+        <div class="container">
+            <h1>DSA Roadmap</h1>
+            <p>Master Data Structures & Algorithms with this structured roadmap, from basics to advanced topics.</p>
+        
+            <div class="img-container">
+                <img src="Dsa.png" alt="DSA Roadmap">
+            </div>
+        
+            <div class="section">
+                <h2>1. Quantitative Aptitude</h2>
+                <ul>
+                    <li>Number Systems</li>
+                    <li>Arithmetic</li>
+                    <li>Geometry and Mensuration</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>2. Verbal Aptitude</h2>
+                <ul>
+                    <li>Reading Comprehension</li>
+                    <li>Vocabulary (Synonyms, Antonyms)</li>
+                    <li>Grammar (Tenses, Parts of Speech)</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>3. Logical Reasoning</h2>
+                <ul>
+                    <li>Syllogism</li>
+                    <li>Series</li>
+                    <li>Blood Relations</li>
+                    <li>Puzzles & Seating Arrangements</li>
+                    <li>Coding-Decoding</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>4. Core DSA Topics</h2>
+                <ul>
+                    <li>Arrays & Strings</li>
+                    <li>Linked Lists</li>
+                    <li>Stacks & Queues</li>
+                    <li>Recursion & Backtracking</li>
+                    <li>Trees & Graphs</li>
+                    <li>Dynamic Programming</li>
+                    <li>Sorting & Searching</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>5. Advanced Topics</h2>
+                <ul>
+                    <li>System Design</li>
+                    <li>Databases & Distributed Systems</li>
+                    <li>Competitive Programming</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>Benefits</h2>
+                <ul>
+                    <li>Step-by-step learning</li>
+                    <li>Helps in cracking FAANG interviews</li>
+                    <li>Enhances problem-solving skills</li>
+                    <li>Industry-relevant concepts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Feel free to reach out!</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="footer">© 2025 DSA Guide. All Rights Reserved.</div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
